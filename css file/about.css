@@ -1,0 +1,94 @@
+/* About Section Styling */
+#about.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #1b1d3a, #2a2c4a);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.sidebar {
+    flex: 1 1 250px;
+    background: linear-gradient(135deg, #2c2f5a, #3a3d6a);
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar h3 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #00ff99, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.sidebar .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.sidebar .tabs span {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    background: #1b1d3a;
+    transition: all 0.3s ease;
+}
+
+.sidebar .tabs span:hover,
+.sidebar .tabs .active {
+    background: linear-gradient(90deg, #00ff99, #00d4ff);
+    color: #fff;
+    box-shadow: 0 0 10px #00ff99, 0 0 20px #00d4ff;
+}
+
+.tab-content {
+    flex: 2 1 500px;
+    display: none;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #1b1d3a;
+    box-shadow: 0 0 10px rgba(0,255,153,0.2);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #00ff99, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tab-content h2 span {
+    color: #00ff99;
+}
+
+.tab-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.experience-list, .education-list, .skill-list, .my-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
